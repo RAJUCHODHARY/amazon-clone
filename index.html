@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="midea.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        
+        <div class="header1">
+            <a href=""><img
+                    src="data:image/jpeg;base64,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dZtTD2hjWtZv9JP6FPSs9qnKsyuUlfC4uqVmirVPk9jSS6Tb8okn6lgVqdLwTr6lMdvPn17qO/ljNsWtXwIiLSURERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQAvoJBBBIIO4I6EH3L4iDP0NWahohjPSRZib0Ed1vijb2B+4eP+JbFW19SfsLmPmiPm6rI2Rv8AwSbH/MVPkWZn6VqZ+96Rz9Oy9h39jD2rb17qtFq7S0oG9ySI+yevKNvduwOC9TdRaZI3GWqbe/xWn6ixR9FmW9m9WfFrR+Y/pejrWf8AWIV5+pdLsHrZSuf7Nk7/ANTF4p9a6ZhB8N1uw7yEUIYD/ilcP1KXIvVPZzUr8UzP5ebda2JjiIiG8W9fWXcwoUIYvZJaeZnj3hreVn17rWL+ZzGTP9duTSs33Ee/LE34Rs2b+hY5Fra/T9bW74qRE/PzPrLPy7ebN8dn3616oL96rBdrV5nRxXWxsshmwdIyMkhhd3269Rv1XkRXbRFo4tHKtEzE8w+lfERdcEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH//Z"
+                    alt=""></a>
+        </div>
+        <div class="header2"><span><a href="">Dilevring to jaipur 302012</a></span><br><span><i
+                    class="fa-solid fa-location-dot"></i><a
+                    href="Online Shopping site in India_ Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in">update
+                    location</a></span></div>
+        <div class="header3"><select>
+                <option value="">Books</option>
+                <option value="">skilse</option>
+                <option value="">all cetogeris</option>
+            </select><input type="search" placeholder="Amazon.in-search......"><i
+                class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="header6">
+            <div class="header6a"><a href="">English</a></div>
+            <div class="header6b"><input type="radio" name="lang">En<br><br><input type="radio"
+                    name="lang">Hi<br><br><input type="radio" name="lang">mt</div>
+        </div>
+        <div class="header4"><a href="">returns</a><br><a href="">& Orders</a></div>
+        <div class="header6">
+            <div class="header6a"><a href=""> Language</a></div>
+            <div class="header6b"><a href=""> Html</a><br><br><a href="">Css</a><br><br><a
+                    href="">Javascript</a><br><br><a href="">React js</a><br><br><a href="">Node Js</a><br><br><a
+                    href="">Mongodb</a><br><br><a href="">java</a><br><br><a href="">python</a></div>
+        </div>
+        <div class="header5"><span><i class="fa-solid fa-house"></i><a href="">cart</a></span></div>
+    </header>
+    <nav>
+        <div class="header6">
+            <div class="header6a"><a href=""> All</a></div>
+            <div class="header6b"><a href=""> Html</a><br><br><a href="">Css</a><br><br><a
+                    href="">Javascript</a><br><br><a href="">React js</a><br><br><a href="">Node Js</a><br><br><a
+                    href="">Mongodb</a><br><br><a href="">java</a><br><br><a href="">python</a></div>
+        </div>
+        <div class="nav1"><a href=""> Fresh</a></div>
+        <div class="nav1"><a href=""> Amazon miniTV</a></div>
+        <div class="nav1"><a href=""> Sell</a></div>
+        <div class="nav1"><a href=""> Best Sellers</a></div>
+        <div class="nav1"><a href=""> Mobiles</a></div>
+        <div class="nav1"><a href=""> Today's Deals</a></div>
+        <div class="nav1"><a href=""> Electronics</a></div>
+        <div class="nav1"><a href="">Customer Service</a></div>
+        <div class="nav1"><a href=""> Prime</a></div>
+        <div class="nav1"><a href="">New Releases</a></div>
+        <div class="nav1"><a href="">Home & Kitchen</a></div>
+    </nav>
+
+    <section>
+        <div class="boxhead">
+            <div class="boxperent">
+                <h1>Appliances for your home | Up to 55% off</h1>
+                <div class="boximg">
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                </div>
+                <p><a href="">See More Offres</a></p>
+            </div>
+            <div class="boxperent">
+                <h1>Appliances for your home | Up to 55% off</h1>
+                <div class="boximg">
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boult_Desktop_Qc_1x._SY116_CB577919562_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Noise_Desktop_Qc_1x._SY116_CB577919562_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Zebronics_Desktop_Qc_1x._SY116_CB577919562_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                </div>
+                <p><a href="">See More Offres</a></p>
+            </div>
+            <div class="boxperent">
+                <h1>Appliances for your home | Up to 55% off</h1>
+                <div class="boximg">
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-186-116._SY116_CB636110853_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-186-116._SY116_CB636110853_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                </div>
+                <p><a href="">See More Offres</a></p>
+            </div>
+            <div class="boxperent">
+                <h1>Appliances for your home | Up to 55% off</h1>
+                <div class="boximg">
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_4._SY116_CB600489960_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_3._SY116_CB600489960_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_7._SY116_CB600489960_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                    <div class="boximg1"><a href=""><img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_5._SY116_CB600489960_.jpg"
+                                alt=""></a><a href="">Air conditioners</a></div>
+                </div>
+                <p><a href="">See More Offres</a></p>
+            </div>
+        </div>
+    </section>
+    <div class="Todayperent">
+        <h1>Today’s Deals <a href="">See all deals</a></h1>
+        <div class="Today">
+            <div class="Today1"><a href=""><img
+                        src="https://m.media-amazon.com/images/I/61I6Dgh3btL._SY695__AC_SY200_.jpg" alt=""></a><span><a
+                        href="">Up to 75% off</a></span><a href="">Limited time deal</a>
+                <p>Branded Suitcase, Backpacks and Duffl…</p>
+            </div>
+            <div class="Today1"><a href=""><img
+                        src="https://m.media-amazon.com/images/I/81v+JxkCi8L._SX679__AC_SY200_.jpg" alt=""></a><span><a
+                        href="">Up to 75% off</a></span><a href="">Limited time deal</a>
+                <p>Branded Suitcase, Backpacks and Duffl…</p>
+            </div>
+            <div class="Today1"><a href=""><img src="https://m.media-amazon.com/images/I/41TssgTTkwL._AC_SY200_.jpg"
+                        alt=""></a><span><a href="">Up to 75% off</a></span><a href="">Limited time deal</a>
+                <p>Branded Suitcase, Backpacks and Duffl…</p>
+            </div>
+            <div class="Today1"><a href=""><img src="https://m.media-amazon.com/images/I/31BFEQMnpIL._AC_SY200_.jpg"
+                        alt=""></a><span><a href="">Up to 75% off</a></span><a href="">Limited time deal</a>
+                <p>Branded Suitcase, Backpacks and Duffl…</p>
+            </div>
+            <div class="Today1"><a href=""><img
+                        src="https://m.media-amazon.com/images/I/61I6Dgh3btL._SY695__AC_SY200_.jpg" alt=""></a><span><a
+                        href="">Up to 75% off</a></span><a href="">Limited time deal</a>
+                <p>Branded Suitcase, Backpacks and Duffl…</p>
+            </div>
+        </div>
+    </div>
+    <div class="carperent">
+        <h1>EMI starting at ₹105/day | Electric motorbike & scootersSee <a href="">all offers</a></h1>
+        <div class="carhead">
+            <div class="car"><a href=""><img src="https://m.media-amazon.com/images/I/51Zsk80ytcL._AC_SY200_.jpg"
+                        alt=""></a></div>
+            <div class="car"><a href=""><img src="https://m.media-amazon.com/images/I/511sS2vAj6L._AC_SY200_.jpg"
+                        alt=""></a></div>
+            <div class="car"><a href=""><img src="https://m.media-amazon.com/images/I/61Lg7B0x5NL._AC_SY200_.jpg"
+                        alt=""></a></div>
+            <div class="car"><a href=""><img src="https://m.media-amazon.com/images/I/71QHotlsT8L._AC_SY200_.jpg"
+                        alt=""></a></div>
+            <div class="car"><a href=""><img src="https://m.media-amazon.com/images/I/51Y-fw9a7DL._AC_SY200_.jpg"
+                        alt=""></a></div>
+
+        </div>
+    </div>
+    <div class="shopperent">
+        <h1>Amazon LIVE - Watch, Chat & Shop LIVE <a href="">See more from Amazon Live</a></h1>
+        <div class="shophead">
+            <div class="shop"><a href=""><img
+                        src="https://images-na.ssl-images-amazon.com/images/I/31+yEtN8L8L._SX240_QL100_AC_SCLZZZZZZZ_.jpg"
+                        alt=""></a>
+                <p>Featured now <br>Mamaearth Daily Glow Sunscreen SPF 50 PA+++</p><span><a href="">15% off</a></span><a
+                    href=""> Limited time deal</a>
+                <p> ₹29600 ==> ₹349.00</p>
+            </div>
+            <div class="shop"><a href=""><img
+                        src="https://images-na.ssl-images-amazon.com/images/I/41phurWzyKS._SX240_QL100_AC_SCLZZZZZZZ_.jpg"
+                        alt=""></a>
+                <p>Featured now <br>Mamaearth Daily Glow Sunscreen SPF 50 PA+++</p><span><a href="">15% off</a></span><a
+                    href=""> Limited time deal</a>
+                <p> ₹29600 ==> ₹349.00</p>
+            </div>
+            <div class="shop"><a href=""><img
+                        src="https://images-na.ssl-images-amazon.com/images/I/31vi6ClWETL._SX240_QL100_AC_SCLZZZZZZZ_.jpg"
+                        alt=""></a>
+                <p>Featured now <br>Mamaearth Daily Glow Sunscreen SPF 50 PA+++</p><span><a href="">15% off</a></span><a
+                    href=""> Limited time deal</a>
+                <p> ₹29600 ==> ₹349.00</p>
+            </div>
+            <div class="shop"><a href=""><img
+                        src="https://images-na.ssl-images-amazon.com/images/I/41nuCHu5-lL._SX240_QL100_AC_SCLZZZZZZZ_.jpg"
+                        alt=""></a>
+                <p>Featured now <br>Mamaearth Daily Glow Sunscreen SPF 50 PA+++</p><span><a href="">15% off</a></span><a
+                    href=""> Limited time deal</a>
+                <p> ₹29600 ==> ₹349.00</p>
+            </div>
+            <div class="shop"><a href=""><img
+                        src="https://images-na.ssl-images-amazon.com/images/I/413UE9thvlL._SX240_QL100_AC_SCLZZZZZZZ_.jpg"
+                        alt=""></a>
+                <p>Featured now <br>Mamaearth Daily Glow Sunscreen SPF 50 PA+++</p><span><a href="">15% off</a></span><a
+                    href=""> Limited time deal</a>
+                <p> ₹29600 ==> ₹349.00</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="shopperent">
+        <h1>Up to 60% off | Women's fashion from stores near you <a href=""> See all offers</a></h1>
+        <div class="shophead">
+            <div class="shop"><a href=""><img src="https://m.media-amazon.com/images/I/61QuL3QQRKL._AC_SY200_.jpg"
+                        alt=""></a> </div>
+            <div class="shop"><a href=""><img src="https://m.media-amazon.com/images/I/813o38y9UGL._AC_SY200_.jpg"
+                        alt=""></a></div>
+            <div class="shop"><a href=""><img src="https://m.media-amazon.com/images/I/81C7VGq2uwL._AC_SY200_.jpg"
+                        alt=""></a></div>
+            <div class="shop"><a href=""><img src="https://m.media-amazon.com/images/I/512wg+yHtOL._AC_SY200_.jpg"
+                        alt=""></a></div>
+            <div class="shop"><a href=""><img src="https://m.media-amazon.com/images/I/815aC+boJ3L._AC_SY200_.jpg"
+                        alt=""></a></div>
+
+        </div>
+    </div>
+
+    <div class="main">
+
+        <p>See personalized recommendations</p>
+        <p><a href="">sing up</a></p><br>
+        <h6>New customer?<a href=""> Start here.</a></h6>
+    </div>
+    <div class="Back">
+        <p>Back to top</p>
+    </div>
+    <div class="futtorbackgraund">
+        <div class="futtor">
+            <div class="futtor1">
+                <p> Get to Know Us</p>
+                <a href="">About Us</a><br>
+                <a href="">Careers</a><br>
+                <a href="">Press Releases</a><br>
+                <a href="">Amazon Science</a>
+            </div>
+            <div class="futtor1">
+                <p> Get to Know Us</p>
+                <a href="">About Us</a><br>
+                <a href="">Careers</a><br>
+                <a href="">Press Releases</a><br>
+                <a href="">Amazon Science</a><br>
+                <a href="">About Us</a><br>
+                <a href="">Careers</a><br>
+                <a href="">Press Releases</a><br>
+            </div>
+            <div class="futtor1">
+                <p> Get to Know Us</p>
+                <a href="">About Us</a><br>
+                <a href="">Careers</a><br>
+                <a href="">Press Releases</a><br>
+                <a href="">Amazon Science</a>
+            </div>
+            <div class="futtor1">
+                <p> Get to Know Us</p>
+                <a href="">About Us</a><br>
+                <a href="">Careers</a><br>
+                <a href="">Press Releases</a><br>
+                <a href="">Amazon Science</a>
+            </div>
+        </div>
+        <div class="futtorsecondlast">
+            <hr>
+            <div class="futtorsecondlast1"><img
+                    src="https://th.bing.com/th?id=OIP.Aie-0i180j40AZ4nxYVG5AHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                    alt="">
+                <div class="header6">
+                    <div class="header6a"><a href=""> All</a></div>
+                    <div class="header6b"><a href=""> Html</a><br><br><a href="">Css</a><br><br><a
+                            href="">Javascript</a><br><br><a href="">React js</a><br><br><a href="">Node
+                            Js</a><br><br><a href="">Mongodb</a><br><br><a href="">java</a><br><br><a href="">python</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="futtornav">
+
+                <div class="nav1"><a href=""> Fresh</a></div>
+                <div class="nav1"><a href=""> Amazon miniTV</a></div>
+                <div class="nav1"><a href=""> Sell</a></div>
+                <div class="nav1"><a href=""> Best Sellers</a></div>
+                <div class="nav1"><a href=""> Mobiles</a></div>
+                <div class="nav1"><a href=""> Today's Deals</a></div>
+                <div class="nav1"><a href=""> Electronics</a></div>
+                <div class="nav1"><a href="">Customer Service</a></div>
+                <div class="nav1"><a href=""> Prime</a></div>
+                <div class="nav1"><a href="">New Releases</a></div>
+                <div class="nav1"><a href="">Home & Kitchen</a></div>
+            </nav>
+        </div>
+        <div class="futtorlast">
+            <div class="futtor">
+                <div class="futtor1">
+                    <a href="">About Us</a><br>
+                    <a href="">Careers</a><br>
+                    <a href="">Press Releases</a><br>
+                    <a href="">Amazon Science</a>
+                </div>
+                <div class="futtor1">
+                    <a href="">About Us</a><br>
+                    <a href="">Careers</a><br>
+                </div>
+                <div class="futtor1">
+                    <a href="">About Us</a><br>
+                    <a href="">Careers</a><br>
+                    <a href="">Press Releases</a><br>
+                    <a href="">Amazon Science</a>
+                </div>
+                <div class="futtor1">
+                    <a href="">About Us</a><br>
+                    <a href="">Press Releases</a><br>
+                    <a href="">Amazon Science</a>
+                </div>
+                <div class="futtor1">
+                    <a href="">About Us</a><br>
+                    <a href="">Careers</a><br>
+                    <a href="">Press Releases</a><br>
+                    <a href="">Amazon Science</a>
+                </div>
+                <div class="futtor1">
+                    <a href="">About Us</a><br>
+                    <a href="">Careers</a><br>
+                </div>
+                <div class="futtor1">
+                    <a href="">About Us</a><br>
+                    <a href="">Careers</a><br>
+                    <a href="">Press Releases</a><br>
+                    <a href="">Amazon Science</a>
+                </div>
+                <div class="futtor1">
+                    <a href="">About Us</a><br>
+                    <a href="">Press Releases</a><br>
+                    <a href="">Amazon Science</a>
+                </div>
+            </div>
+        </div>
+        <h5>
+            <a href="">Conditions of Use & Sale</a>
+            <a href=""> Privacy Notice</a>
+            <a href=""> Interest-Based Ads</a>
+        </h5>
+        <h4>© 1996-2024, Amazon.com, Inc. or its affiliates</h4>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@media screen and (min-width:320px)and (max-width:570px){
+    header{
+        display: none !important;
+    }
+    nav{
+        
+        width: unset !important;
+    }
+    .nav1 a{
+        font-size: 4px;
+        font-weight: bold;
+    }
+    .boxhead,.Today ,.carhead,.shophead{
+        width: unset !important;
+        flex-direction: column;
+    }
+    section,.Todayperent,.carperent,.shopperent, .futtorsecondlast ,.futtorsecondlast1,.boximg{
+        width: unset !important;
+    }
+}
+
+@media screen and (min-width:570px)and (max-width:1024px){
+    header{
+        display: none;
+    }
+    nav{        
+        width: unset !important;
+    }
+    .nav1 a{
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .Todayperent,.carperent,.shopperent,.Today ,.carhead,.shophead,.boxhead{
+        width: unset !important;
+        flex-direction: column;
+    }
+    section, .futtorsecondlast ,.futtorsecondlast1,.boximg {
+        width: unset !important;
+    }
+}
